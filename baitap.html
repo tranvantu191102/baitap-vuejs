@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body class=" bg-[#e7e8ee] ">
+    <div id="app" class="w-full flex h-full justify-center items-center p-5 h-[100vh]">
+        <div class="w-[100%] h-fit shadow-lg rounded-lg border-[1px] bg-white">
+            <div class="ml-5 mt-5">
+                <p class="font-bold text-lg">Account detail</p>
+                <div class="flex gap-3 mt-2">
+                    <img class=" rounded-lg w-[100px] h-[100px] object-cover" src="https://i.pravatar.cc/300" alt="">
+                    <div class="flex flex-col items-start justify-between pb-1 pt-1">
+                        <button class="bg-[#14c661] text-white px-2 py-1 rounded-md cursor-pointer px-4">
+                            <label for="file" class="cursor-pointer">Upload new avatar</label>
+                            <input type="file" name="" id="file" hidden>
+                        </button>
+                        <p class="font-medium">Allow JPG, GIF, PNG or BIDV</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-[1px] bg-gray-200 mt-5"></div>
+            <div class="p-5 flex flex-col gap-5">
+                <div class="border-[1px] rounded-md p-2 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                    <input placeholder="Tran Van Tu" type="text" class="w-full" style="outline: none;">
+                </div>
+
+                <div class="border-[1px] rounded-md p-2 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                    <input placeholder="tvantudn02@gmail.com" type="text" class="w-full" style="outline: none;">
+                </div>
+
+                <div class="border-[1px] rounded-md p-2 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                    <select name="" id="" class="w-full" style="outline: none;">
+                        <option value="">Dannang</option>
+                        <option value="">Tam ky</option>
+                        <option value="">Hoi an</option>
+                    </select>
+                </div>
+                <div class="border-[1px] flex flex-col gap-2 py-2 px-5 rounded-md">
+                    <div class="flex justify-between">
+                        <label for="IT">IT</label>
+                        <input type="checkbox" class="ml-auto" id="IT">
+                    </div>
+                    <div class="flex justify-between">
+                        <label for="DS">DS</label>
+                        <input type="checkbox" class="ml-auto" id="DS">
+                    </div>
+                    <div class="flex justify-between">
+                        <label for="MO">MO</label>
+                        <input type="checkbox" class="ml-auto" id="MO">
+                    </div>
+                </div>
+
+                <div class="border-[1px] flex flex-col gap-2 py-2 px-5 rounded-md">
+                    <div class="flex justify-between">
+                        <label for="gender">IT</label>
+                        <input type="radio" name="gender" class="ml-auto">
+                    </div>
+                    <div class="flex justify-between">
+                        <label for="gender">DS</label>
+                        <input type="radio" name="gender" checked class="ml-auto">
+                    </div>
+                    <div class="flex justify-between">
+                        <label for="gender">MO</label>
+                        <input type="radio" name="gender" class="ml-auto">
+                    </div>
+                </div>
+                <div>
+                    <button class="bg-[#14c661] text-white px-2 py-1 rounded-md">SAVE CHANGE</button>
+                    <button class="bg-[#bebcbe] text-white px-2 py-1 rounded-md ml-2">RESET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+    const app = Vue.createApp({
+        data() {
+            return {
+                message: 'Hello Vue!'
+            }
+        }
+    })
+    app.mount('#app')
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+</html>
